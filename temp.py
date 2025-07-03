@@ -90,11 +90,11 @@ buzzer.duty_u16(0)  # Start with buzzer off
 # Network Config
 WIFI_SSID = "Institutet 2-2" # Enter SSID
 WIFI_PASSWORD = "9A66B40F33" # Enter WIFI Password
-UBIDOTS_TOKEN = "BBUS-BfEl1dInwuzIz8Ir5s9b3TFBg0VI1R" 
+UBIDOTS_TOKEN = "BBUS-BfEl1dInwuzIz8Ir5s9b3TFBg0VI1R"   
 DEVICE_LABEL = "raspberrypi"
 VARIABLE_LABEL = "new-variable-2"
 
-# Global Variables
+# Global 
 ALARM_DATETIME = None
 TEMPO = 1.0
 last_alarm_trigger = None
@@ -152,9 +152,13 @@ def get_alarm_time():
 # Summer Time
 def is_summer_time(now):
     year, month = now[0], now[1]
-    if 3 < month < 10: return True
-    if month == 3 and now[2] >= (31 - (5 * year + 4) // 7 % 7): return True
-    if month == 10 and now[2] < (31 - (5 * year + 1) // 7 % 7): return True
+    if 3 < month < 10: 
+        return True
+    if month == 3 and now[2] >= (31 - (5 * year + 4) // 7 % 7): 
+        return True
+    if month == 10 and now[2] < (31 - (5 * year + 1) // 7 % 7):
+        return True
+    
     return False
 
 def get_local_time():
