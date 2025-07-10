@@ -1,6 +1,8 @@
 # Temp-Larm  
 Ryan Shi Ding / rs223re  
 
+(Note that all commits have been squashed into a single commit - reason is to hide sensitive data and information).
+
 In this project, I've created an embedded temperature monitoring system with alarm functionality. The system uses a Raspberry Pi Pico WH to continuously measure temperature through an MCP9700 sensor, display the readings on an OLED screen, and trigger a buzzer alarm at user-set times. The compact design provides both visual and audible alerts, making it ideal for temperature-sensitive environments.
 
 This project takes roughly 4-8 hours depending on your experience with microcontrollers and embedded systems. The total component cost is approximately 210.50 SEK (excluding common prototyping components).
